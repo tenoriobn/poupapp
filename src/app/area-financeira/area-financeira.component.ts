@@ -12,7 +12,7 @@ import { Transacao, TipoTransacao } from './compartilhados/transacao.model';
   styleUrl: './area-financeira.component.css',
 })
 export class AreaFinanceiraComponent {
-  saldo = 30;
+  saldo = -30;
 
   transacoes: Transacao[] = [
     {
