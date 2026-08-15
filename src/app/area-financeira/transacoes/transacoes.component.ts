@@ -1,9 +1,10 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { TransacaoComponent } from './transacao/transacao.component';
 import { Transacao } from '../compartilhados/transacao.model';
 import { BotaoComponent } from '../../compartilhados/botao/botao.component';
 import { CardComponent } from '../compartilhados/card/card.component';
 import { BotaoAdicionarTransacaoComponent } from './botao-adicionar-transacao/botao-adicionar-transacao.component';
+import { Conta } from '../compartilhados/conta.model';
 
 @Component({
   selector: 'app-transacoes',
@@ -17,4 +18,8 @@ import { BotaoAdicionarTransacaoComponent } from './botao-adicionar-transacao/bo
 })
 export class TransacoesComponent {
   transacoes = input.required<Transacao[]>();
+
+  contas = input.required<Conta[]>();
+
+  transacaoCriada = output<Transacao>();
 }
