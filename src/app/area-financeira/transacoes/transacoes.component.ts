@@ -19,7 +19,10 @@ import { Conta } from '../compartilhados/conta.model';
 export class TransacoesComponent {
   transacoes = input.required<Transacao[]>();
 
+<<<<<<< HEAD
   contas = input.required<Conta[]>();
 
+=======
+>>>>>>> a9ac11f18ed8fd50db9d7e780dffe93b882aeedb
   transacaoCriada = output<Transacao>();
 }
